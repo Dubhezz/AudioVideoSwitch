@@ -15,6 +15,11 @@
 		460BC893206387CC00379BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 460BC892206387CC00379BF7 /* main.m */; };
 		460BC89D206387CC00379BF7 /* AudioVideoSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460BC89C206387CC00379BF7 /* AudioVideoSwitchTests.m */; };
 		460BC8A8206387CC00379BF7 /* AudioVideoSwitchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 460BC8A7206387CC00379BF7 /* AudioVideoSwitchUITests.m */; };
+		460BC8B620638AAC00379BF7 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8B520638AAB00379BF7 /* music.mp3 */; };
+		460BC8BA20638B5500379BF7 /* DTPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 460BC8B920638B5500379BF7 /* DTPlayer.m */; };
+		460BC8BD2063B8A100379BF7 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8BC2063B8A100379BF7 /* video.mov */; };
+		460BC8BF2063BB6D00379BF7 /* 1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8BE2063BB6D00379BF7 /* 1.mov */; };
+		460BC8C12063C15800379BF7 /* 2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8C02063C15700379BF7 /* 2.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		460BC8A3206387CC00379BF7 /* AudioVideoSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioVideoSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		460BC8A7206387CC00379BF7 /* AudioVideoSwitchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoSwitchUITests.m; sourceTree = "<group>"; };
 		460BC8A9206387CC00379BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460BC8B520638AAB00379BF7 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		460BC8B820638B5500379BF7 /* DTPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTPlayer.h; sourceTree = "<group>"; };
+		460BC8B920638B5500379BF7 /* DTPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTPlayer.m; sourceTree = "<group>"; };
+		460BC8BC2063B8A100379BF7 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
+		460BC8BE2063BB6D00379BF7 /* 1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1.mov; sourceTree = "<group>"; };
+		460BC8C02063C15700379BF7 /* 2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +112,16 @@
 		460BC882206387CC00379BF7 /* AudioVideoSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				460BC8B720638AEC00379BF7 /* AVPlayer */,
 				460BC883206387CC00379BF7 /* AppDelegate.h */,
 				460BC884206387CC00379BF7 /* AppDelegate.m */,
 				460BC886206387CC00379BF7 /* ViewController.h */,
 				460BC887206387CC00379BF7 /* ViewController.m */,
 				460BC889206387CC00379BF7 /* Main.storyboard */,
+				460BC8B520638AAB00379BF7 /* music.mp3 */,
+				460BC8BE2063BB6D00379BF7 /* 1.mov */,
+				460BC8BC2063B8A100379BF7 /* video.mov */,
+				460BC8C02063C15700379BF7 /* 2.mov */,
 				460BC88C206387CC00379BF7 /* Assets.xcassets */,
 				460BC88E206387CC00379BF7 /* LaunchScreen.storyboard */,
 				460BC891206387CC00379BF7 /* Info.plist */,
@@ -130,6 +146,15 @@
 				460BC8A9206387CC00379BF7 /* Info.plist */,
 			);
 			path = AudioVideoSwitchUITests;
+			sourceTree = "<group>";
+		};
+		460BC8B720638AEC00379BF7 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				460BC8B820638B5500379BF7 /* DTPlayer.h */,
+				460BC8B920638B5500379BF7 /* DTPlayer.m */,
+			);
+			path = AVPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460BC8C12063C15800379BF7 /* 2.mov in Resources */,
+				460BC8B620638AAC00379BF7 /* music.mp3 in Resources */,
 				460BC890206387CC00379BF7 /* LaunchScreen.storyboard in Resources */,
 				460BC88D206387CC00379BF7 /* Assets.xcassets in Resources */,
+				460BC8BF2063BB6D00379BF7 /* 1.mov in Resources */,
+				460BC8BD2063B8A100379BF7 /* video.mov in Resources */,
 				460BC88B206387CC00379BF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +296,7 @@
 			files = (
 				460BC888206387CC00379BF7 /* ViewController.m in Sources */,
 				460BC893206387CC00379BF7 /* main.m in Sources */,
+				460BC8BA20638B5500379BF7 /* DTPlayer.m in Sources */,
 				460BC885206387CC00379BF7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +461,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U3XKPF3QC;
 				INFOPLIST_FILE = AudioVideoSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhe.AudioVideoSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +476,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U3XKPF3QC;
 				INFOPLIST_FILE = AudioVideoSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dubhe.AudioVideoSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
