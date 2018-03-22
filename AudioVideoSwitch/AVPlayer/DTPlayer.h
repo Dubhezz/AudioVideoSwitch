@@ -12,6 +12,7 @@
 @interface DTPlayer : NSObject
 
 - (instancetype)initWithAssetURL:(NSURL *)assetURL;
+- (void)replaceCurrentAssetWithURL:(NSURL *)assetURL;
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
 

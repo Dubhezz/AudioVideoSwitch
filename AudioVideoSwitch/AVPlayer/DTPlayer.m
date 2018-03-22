@@ -36,6 +36,13 @@
     self.playerLayer = playerLayer;
 }
 
+- (void)replaceCurrentAssetWithURL:(NSURL *)assetURL {
+    self.asset = [AVAsset assetWithURL:assetURL];
+    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:self.asset];
+    self.playerItem = playerItem;
+    [self.player replaceCurrentItemWithPlayerItem:playerItem];
+}
+
 
 
 

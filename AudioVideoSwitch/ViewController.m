@@ -108,12 +108,39 @@
 }
 
 - (IBAction)fullScreen:(id)sender {
+    if (self.audioPlayer.player) {
+        [self.audioPlayer pause];
+    }
     [self.videoPlayer.player setMuted:NO];
 }
 
 - (IBAction)smallScreen:(id)sender {
     [self.videoPlayer.player setMuted:YES];
+    if (self.audioPlayer.player){
+        [self.audioPlayer play];
+    }
 }
 
 
 @end
+
+/**
+ App内
+ timeline 视频播放时:
+    有音频,音频播放
+    进入后台:音频播放
+ 
+ 全屏播放:
+    音频暂停
+    进入后台:音乐不唤起
+    全屏关闭:音乐恢复
+ 
+ 悬浮窗:
+    音乐暂停
+    进入后台:音乐不唤起
+    主动点击音乐:悬浮窗关闭
+ 
+ 
+ 
+ 
+ */

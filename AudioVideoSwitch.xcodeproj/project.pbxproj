@@ -20,6 +20,7 @@
 		460BC8BD2063B8A100379BF7 /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8BC2063B8A100379BF7 /* video.mov */; };
 		460BC8BF2063BB6D00379BF7 /* 1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8BE2063BB6D00379BF7 /* 1.mov */; };
 		460BC8C12063C15800379BF7 /* 2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 460BC8C02063C15700379BF7 /* 2.mov */; };
+		464240172063F0740068BB90 /* DTAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 464240162063F0740068BB90 /* DTAVAudioManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		460BC8BC2063B8A100379BF7 /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
 		460BC8BE2063BB6D00379BF7 /* 1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1.mov; sourceTree = "<group>"; };
 		460BC8C02063C15700379BF7 /* 2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.mov; sourceTree = "<group>"; };
+		464240152063F0740068BB90 /* DTAVAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAVAudioManager.h; sourceTree = "<group>"; };
+		464240162063F0740068BB90 /* DTAVAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAVAudioManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		460BC882206387CC00379BF7 /* AudioVideoSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				464240142063F0250068BB90 /* Manager */,
 				460BC8B720638AEC00379BF7 /* AVPlayer */,
 				460BC883206387CC00379BF7 /* AppDelegate.h */,
 				460BC884206387CC00379BF7 /* AppDelegate.m */,
@@ -155,6 +159,15 @@
 				460BC8B920638B5500379BF7 /* DTPlayer.m */,
 			);
 			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		464240142063F0250068BB90 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				464240152063F0740068BB90 /* DTAVAudioManager.h */,
+				464240162063F0740068BB90 /* DTAVAudioManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +310,7 @@
 				460BC888206387CC00379BF7 /* ViewController.m in Sources */,
 				460BC893206387CC00379BF7 /* main.m in Sources */,
 				460BC8BA20638B5500379BF7 /* DTPlayer.m in Sources */,
+				464240172063F0740068BB90 /* DTAVAudioManager.m in Sources */,
 				460BC885206387CC00379BF7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
